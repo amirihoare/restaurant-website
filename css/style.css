@@ -156,7 +156,7 @@ nav.header {
   justify-content: center;
   text-align: center;
   height: 150vh;
-  /* border: solid 8px #ff6347; */
+  background-color: #f2f7fa;
 }
 
 .specialties__content {
@@ -180,7 +180,7 @@ nav.header {
   gap: 6rem;
   justify-content: center;
   align-items: center;
-  padding: 0 0;
+  padding: 20px 0 40px 0;
   font-family: sans-serif;
   font-size: 1.6rem;
 }
@@ -191,12 +191,12 @@ nav.header {
   align-items: center;
   grid-template-columns: repeat(4, 1fr); /* 4 columns */
   grid-template-rows: repeat(2, auto);  /* 2 rows */
-  gap: 10px;
+  gap: 50px;
 }
 
 .specialties__image {
   width: 100%;
-  height: auto;
+  height: 450px;
   display: block;
   object-fit: cover;
 }
@@ -208,6 +208,13 @@ nav.header {
   text-align: center;
   height: 100vh;
   /* border: solid 8px #ff6347; */
+
+  background-image: url('../imgs/opening-hours.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .booking__content {
@@ -248,7 +255,7 @@ nav.header {
   justify-content: center;
   text-align: center;
   height: 100vh;
-  /* border: solid 8px #ff6347; */
+  background-color: #f2f7fa;
 }
 
 .testimonials__content {
@@ -284,5 +291,9 @@ nav.header {
 }
 
 .testimonials__text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 15%;
   margin: 0;
 }
