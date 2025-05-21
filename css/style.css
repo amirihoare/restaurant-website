@@ -106,7 +106,6 @@ nav.header {
   width: 75%;
 }
 
-
 .hero__social {
   display: flex;
   list-style: none;
@@ -123,4 +122,167 @@ nav.header {
 }
 .hero__social-icon {
   color: #ff6347;
+}
+
+/* ---------- about us section ---------- */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  /* border: solid 8px #ff6347; */
+}
+
+.about__content {
+  max-width: 50%;
+  text-align: left;
+  padding: 5% 12rem 0 12rem;
+}
+
+.about__title {
+  font-size: 6rem;
+  margin: 0 0 20px 0;
+}
+
+.about__label, 
+.about__text {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+
+/* ---------- specialties section ---------- */
+.specialties {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 150vh;
+  /* border: solid 8px #ff6347; */
+}
+
+.specialties__content {
+  max-width: 100%;
+  padding: 5% 12rem;
+}
+
+.specialties__title {
+  font-size: 6rem;
+  margin: 0 0 20px 0;
+}
+
+.specialties__label {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+
+.specialties__categories {
+  display: flex;
+  list-style: none;
+  gap: 6rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+
+.specialties__gallery {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(2, auto);  /* 2 rows */
+  gap: 10px;
+}
+
+.specialties__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ---------- booking section ---------- */
+.booking {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  /* border: solid 8px #ff6347; */
+}
+
+.booking__content {
+  max-width: 100%;
+  padding: 5% 0;
+}
+
+.booking__title {
+  font-size: 6rem;
+  margin: 0 0 20px 0;
+}
+
+.booking__label,
+.booking__contact,
+.booking__hours {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+
+.booking__hours {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.booking__media {
+  display: flex;
+  justify-content: center;
+}
+
+.booking__video {
+  width: 500px;
+}
+
+/* ---------- testimonials section ---------- */
+.testimonials {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  /* border: solid 8px #ff6347; */
+}
+
+.testimonials__content {
+  max-width: 100%;
+  padding: 5% 0;
+}
+
+.testimonials__title {
+  font-size: 6rem;
+  margin: 0 0 20px 0;
+}
+
+.testimonials__image {
+  width: 10rem;
+}
+
+.testimonials__name {
+  font-family: sans-serif;
+  font-size: 2.8rem;
+  padding: 2rem 0 0 0;
+  margin: 0;
+}
+
+.testimonials__label,
+.testimonials__role,
+.testimonials__text {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+
+.testimonials__rating {
+  padding: 2rem 0;
+}
+
+.testimonials__text {
+  margin: 0;
 }
