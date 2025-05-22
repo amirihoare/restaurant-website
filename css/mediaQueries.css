@@ -1,0 +1,12 @@
+@media screen and (max-width: 1200px) {
+    #desktop__nav {
+        display: none;
+    }
+    #hamburger__nav {
+        display: flex;
+    }
+    
+    nav.header {
+        padding: 1rem 2rem;
+    }
+}
