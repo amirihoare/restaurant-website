@@ -1,3 +1,182 @@
+/* ---------- desktop screens (1440px and above) ---------- */
+@media (min-width: 1440px) {
+  html {
+    font-size: 70%;
+  }
+  
+  nav.header {
+    padding: 1rem 15rem;
+  }
+  
+  .hero__content,
+  .about__content {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+  
+  .specialties__content {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+}
+
+/* ---------- tablet landscape (1024px - 1199px) ---------- */
+@media (max-width: 1199px) {
+  html {
+    font-size: 58%;
+  }
+  
+  nav.header {
+    padding: 1rem 6rem;
+  }
+  
+  .header__menu {
+    gap: 4rem;
+  }
+  
+  .hero__content,
+  .about__content {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    max-width: 60%;
+  }
+  
+  .specialties__content {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+  
+  .hero__title,
+  .about__title,
+  .specialties__title,
+  .booking__title,
+  .testimonials__title {
+    font-size: 5rem;
+  }
+  
+  .specialties__categories {
+    gap: 3rem;
+  }
+  
+  .specialties__gallery {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+  }
+  
+  .hero__social {
+    gap: 4rem;
+  }
+}
+
+/* tablet portrait (768px - 1023px) */
+@media (max-width: 1023px) {
+  html {
+    font-size: 55%;
+  }
+  
+  /* hide desktop nav, show hamburger */
+  nav.header {
+    display: none;
+  }
+  
+  #hamburger__nav {
+    display: flex;
+  }
+  
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .hero__content {
+    max-width: 90%;
+    padding: 0 2rem;
+  }
+  
+  .hero__title {
+    font-size: 6rem;
+  }
+  
+  .hero__search {
+    width: 100%;
+  }
+  
+  .hero__social {
+    justify-content: center;
+    gap: 3rem;
+  }
+  
+  .about {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 5rem 0;
+  }
+  
+  .about__content {
+    max-width: 90%;
+    padding: 0 3rem;
+  }
+  
+  .about__title {
+    font-size: 4.5rem;
+  }
+  
+  .specialties {
+    height: auto;
+    padding: 5rem 0;
+  }
+  
+  .specialties__content {
+    padding: 0 3rem;
+  }
+  
+  .specialties__title {
+    font-size: 4.5rem;
+  }
+  
+  .specialties__categories {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .specialties__gallery {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+  }
+  
+  .booking {
+    height: auto;
+    padding: 5rem 0;
+  }
+  
+  .booking__title {
+    font-size: 4.5rem;
+  }
+  
+  .booking__hours {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .testimonials {
+    height: auto;
+    padding: 5rem 0;
+  }
+  
+  .testimonials__title {
+    font-size: 4.5rem;
+  }
+  
+  .testimonials__text {
+    padding: 0 10%;
+  }
+}
+
+
+
 @media screen and (max-width: 1200px) {
     #desktop__nav {
         display: none;
