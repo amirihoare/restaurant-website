@@ -175,7 +175,152 @@
   }
 }
 
+/* ---------- mobile landscape (568px - 767px) ---------- */
+@media (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+  
+  .hero__title {
+    font-size: 5rem;
+  }
+  
+  .about__title,
+  .specialties__title,
+  .booking__title,
+  .testimonials__title {
+    font-size: 4rem;
+  }
+  
+  .hero__social {
+    gap: 2rem;
+  }
+  
+  .specialties__gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .specialties__image {
+    height: 300px;
+  }
+  
+  .booking__video {
+    max-width: 400px;
+  }
+  
+  .testimonials__text {
+    padding: 0 5%;
+  }
+}
 
+/* mobile portrait (320px - 567px) */
+@media (max-width: 567px) {
+  html {
+    font-size: 45%;
+  }
+  
+  #hamburger__nav {
+    padding: 1rem 1.5rem;
+  }
+  
+  .menu-links {
+    width: 200px;
+  }
+  
+  .hero {
+    padding: 1rem;
+    min-height: 400px;
+  }
+  
+  .hero__content {
+    max-width: 95%;
+    padding: 0 1rem;
+  }
+  
+  .hero__title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero__social {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .about__content,
+  .specialties__content {
+    padding: 5% 2rem;
+    max-width: 95%;
+  }
+  
+  .about__title,
+  .specialties__title,
+  .booking__title,
+  .testimonials__title {
+    font-size: 3.5rem;
+  }
+  
+  .specialties__categories {
+    gap: 1rem;
+  }
+  
+  .specialties__gallery {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .specialties__image {
+    height: 250px;
+  }
+  
+  .booking__content,
+  .testimonials__content {
+    padding: 5% 1.5rem;
+  }
+  
+  .booking__video {
+    max-width: 300px;
+  }
+  
+  .testimonials__text {
+    padding: 0 2%;
+  }
+  
+  .testimonials__name {
+    font-size: 2.4rem;
+  }
+}
+
+/* extra small mobile (up to 319px) */
+@media (max-width: 319px) {
+  html {
+    font-size: 40%;
+  }
+  
+  .hero__title {
+    font-size: 3.5rem;
+  }
+  
+  .about__title,
+  .specialties__title,
+  .booking__title,
+  .testimonials__title {
+    font-size: 3rem;
+  }
+  
+  .hero__content,
+  .about__content,
+  .specialties__content,
+  .booking__content,
+  .testimonials__content {
+    padding: 0 1rem;
+  }
+  
+  .booking__video {
+    max-width: 250px;
+  }
+}
 
 @media screen and (max-width: 1200px) {
     #desktop__nav {
