@@ -221,8 +221,33 @@ nav.header {
   margin: 0 0 20px 0;
 }
 
+.hero__search-input-icons {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.hero__search-input-icons i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: #888888;
+  pointer-events: none;
+}
+
 .hero__search {
-  width: 75%;
+  width: 50rem;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px 10px 10px 25px;
+  box-sizing: border-box;
+  caret-color: #ff6347;
+}
+
+.hero__button {
+  border-radius: 5px;
+  position: absolute;
 }
 
 .hero__social {
@@ -239,6 +264,7 @@ nav.header {
   font-size: 2rem;
   margin: 20px 0 0 0;
 }
+
 .hero__social-icon {
   color: #ff6347;
 }
