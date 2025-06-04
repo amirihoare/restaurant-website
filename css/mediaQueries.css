@@ -232,6 +232,7 @@
     padding: 1rem;
     min-height: 400px;
     max-height: 450px;
+    background-position: 60% center;
     /* margin: 1rem; */
     /* border-radius: 8px;
     overflow: hidden; */
@@ -257,10 +258,15 @@
     align-items: center;
   }
 
+  .about {
+    background-position: 70% center;
+  }
+
   .about__content,
   .specialties__content {
     padding: 5% 2rem;
     max-width: 95%;
+    margin-left: 0;
   }
   
   .about__title,
