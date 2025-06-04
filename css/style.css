@@ -207,6 +207,7 @@ nav.header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* background-attachment: fixed; */
   position: relative;
 }
 
@@ -228,6 +229,7 @@ nav.header {
   width: 100%;
   max-width: 60rem;
   font-size: 1.4rem;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 }
 
 .hero__search-input-icons {
@@ -266,6 +268,12 @@ nav.header {
   display: flex;
   align-items: center;
   gap: 5px;
+  transition: all 300ms ease;
+}
+
+.hero__button:hover {
+  transform: translateY(-2px);
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
 }
 
 .hero__social {
@@ -291,15 +299,22 @@ nav.header {
 .about {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   height: 100vh;
+
+  background-image: url('../imgs/yogurt-faded.webp');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   /* border: solid 8px #ff6347; */
 }
 
 .about__content {
   max-width: 50%;
   text-align: left;
-  padding: 5% 12rem 0 12rem;
+  padding: 0 12rem 0 12rem;
+  margin-left: 60rem;
 }
 
 .about__title {
@@ -311,6 +326,31 @@ nav.header {
 .about__text {
   font-family: sans-serif;
   font-size: 1.6rem;
+}
+
+.about__text {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.about__button {
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff6347;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 300ms ease;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.about__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* ---------- specialties section ---------- */
@@ -393,7 +433,7 @@ nav.header {
   height: 100vh;
   /* border: solid 8px #ff6347; */
 
-  background-image: url('../imgs/opening-hours.webp');
+  background-image: url('../imgs/yogurt2.webp');
 
   background-size: cover;
   background-position: center;
@@ -435,11 +475,11 @@ nav.header {
 }
 
 /* ---------- testimonials section ---------- */
-.testimonials {
+#testimonials__section {
   display: flex;
   justify-content: center;
   text-align: center;
-  height: 100vh;
+  height: 70vh;
   background-color: #f2f7fa;
 }
 
@@ -484,3 +524,4 @@ nav.header {
   padding: 0 15%;
   margin: 0;
 }
+
