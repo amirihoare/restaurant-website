@@ -195,6 +195,14 @@ nav.header {
     transition: color 0.3s ease;
 }
 
+/* labels */
+.about__label,
+.specialties__label,
+.booking__label,
+.testimonials__label {
+  color: #ff6347;
+}
+
 /* ---------- hero section  ---------- */
 .hero {
   display: flex;
@@ -314,7 +322,8 @@ nav.header {
   max-width: 50%;
   text-align: left;
   padding: 0 12rem 0 12rem;
-  margin-left: 60rem;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 .about__title {
@@ -514,6 +523,10 @@ nav.header {
 
 .testimonials__rating {
   padding: 2rem 0;
+}
+
+.testimonials__star {
+  color: #ffc313;
 }
 
 .testimonials__text {
