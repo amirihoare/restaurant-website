@@ -84,7 +84,8 @@
   }
 
   .specialties__content {
-    padding: 0 5rem;
+    /* padding: 0 5rem; */
+    padding: 2.5rem;
   }
   
   .hero__title,
@@ -122,7 +123,7 @@
   }
   
   .testimonials {
-    height: auto;
+    max-height: 50vh;
     padding: 6rem 0;
   }
   
@@ -233,19 +234,56 @@
     padding: 6rem 0;
   }
   
+  .testimonials__content {
+    padding: 4rem 0.5rem;
+    max-width: 80%;
+  }
+  
   .testimonials__text {
     padding: 0 12%;
   }
 }
 
 /* ---------- mobile landscape (568px - 767px) ---------- */
-@media (max-width: 767px) {
+@media (max-width: 767px) and (orientation: landscape) {
   html {
     font-size: 50%;
   }
   
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 3rem;
+  }
+  
+  .hero__content {
+    max-width: 85%;
+    padding: 0 3rem;
+  }
+
   .hero__title {
     font-size: 5rem;
+  }
+  
+  .hero__social {
+    justify-content: flex-start;
+    gap: 3.5rem;
+  }
+  
+  .about {
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: left;
+    height: auto;
+    padding: 6rem;
+  }
+  
+  .about__content {
+    max-width: 55%;
+    padding: 2.5rem;
+    margin-left: 0; 
+    text-align: left;
   }
   
   .about__title,
@@ -255,29 +293,59 @@
     font-size: 4rem;
   }
 
-  .hero__social {
-    gap: 2rem;
+  .specialties {
+    height: auto;
+    padding: 6rem 0;
   }
-  
-  .about {
-    flex-direction: row;
-    text-align: center;
-    justify-content: flex-end;
-    padding: 3rem 2rem;
-  }
-  
-  .about__content {
-    max-width: 50%;
-    padding: 2rem;
-    margin-left: 0; 
-    text-align: left;
+
+  .specialties__content {
+    padding: 0 4rem;
   }
 
   .specialties__categories {
     display: flex;
     flex-direction: row;
+    gap: 2rem;
   }
 
+  .specialties__gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 3rem;
+  }
+  
+  .specialties__image {
+    height: 180px;
+    width: 100%;
+  }
+  
+  .booking {
+    height: auto;
+    padding: 6rem 0;
+  }
+  
+  .booking__hours {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  
+  .testimonials {
+    height: auto;
+    padding-top: 6rem;
+  }
+  
+  .testimonials__content {
+    padding: 4rem 0.5rem;
+    max-width: 80%;
+  }
+
+  .testimonials__text {
+    padding: 0 12%;
+  }
+}
+
+/* ---------- mobile landscape (568px - 767px) general ---------- */
+@media (max-width: 767px) and (orientation: portrait) {
   .specialties__gallery {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -286,14 +354,6 @@
   
   .specialties__image {
     height: 200px;
-  }
-  
-  .booking__video {
-    max-width: 400px;
-  }
-  
-  .testimonials__text {
-    padding: 0 5%;
   }
 }
 
@@ -316,9 +376,6 @@
     min-height: 400px;
     max-height: 450px;
     background-position: 60% center;
-    /* margin: 1rem; */
-    /* border-radius: 8px;
-    overflow: hidden; */
   }
   
   .hero__content {
@@ -343,12 +400,15 @@
 
   .about {
     background-position: 70% center;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 6rem 0;
   }
 
-  .about__content,
-  .specialties__content {
-    padding: 5% 2rem;
-    max-width: 95%;
+  .about__content {
+    padding: 0 0.5rem;
+    max-width: 80%;
     margin-left: 0;
   }
   
@@ -358,7 +418,20 @@
   .testimonials__title {
     font-size: 3.5rem;
   }
-  
+
+  .specialties {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 6rem 0;
+  }
+
+  .specialties__content {
+    padding: 0 0.5rem;
+    max-width: 80%;
+    margin-left: 0;
+  }
+
   .specialties__categories {
     display: flex;
     flex-direction: column;
@@ -367,16 +440,34 @@
   
   .specialties__gallery {
     grid-template-columns: 1fr;
-    gap: 15px;
+    grid-template-rows: repeat(8, auto);
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
   }
   
   .specialties__image {
-    height: 250px;
+    height: 280px;
+    width: 100%;
   }
   
-  .booking__content,
+  .booking {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 6rem 0;
+  }
+
+  .booking__content {
+    padding: 0 0.5rem;
+    max-width: 80%;
+    margin-left: 0;
+  }
+
   .testimonials__content {
-    padding: 5% 1.5rem;
+    /* padding: 5% 1.5rem; */
+    padding: 6rem 0.5rem;
+    max-width: 80%;
   }
   
   .booking__video {
@@ -419,6 +510,17 @@
   
   .booking__video {
     max-width: 250px;
+  }
+
+  .specialties__gallery {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  
+  .specialties__image {
+    height: 200px;
   }
 }
 
