@@ -57,11 +57,21 @@
   .specialties__categories {
     gap: 3rem;
   }
-  
+
   .specialties__gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 3rem;
+  }
+
+  .specialties__image {
+    height: 300px;
+  }
+  
+  /* .specialties__gallery {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 30px;
-  }
+  } */
   
   .hero__social {
     gap: 4rem;
@@ -122,19 +132,6 @@
     margin-left: 0; 
     text-align: left;
   }
-
-  /* .about {
-    flex-direction: row;
-    text-align: center;
-    justify-content: flex-end;
-    padding: 3rem 2rem;
-  } */
-
-  /* .about__content {
-    max-width: 90%;
-    padding: 0 5rem;
-    margin-left: 0;
-  } */
   
   .about__title {
     font-size: 4.5rem;
@@ -152,15 +149,21 @@
   .specialties__title {
     font-size: 4.5rem;
   }
-  
+
   .specialties__categories {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     gap: 1.5rem;
   }
   
   .specialties__gallery {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
     gap: 25px;
+  }
+
+  .specialties__image {
+    height: 250px;
   }
   
   .booking {
@@ -226,13 +229,19 @@
     text-align: left;
   }
 
+  .specialties__categories {
+    display: flex;
+    flex-direction: row;
+  }
+
   .specialties__gallery {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
   }
   
   .specialties__image {
-    height: 300px;
+    height: 200px;
   }
   
   .booking__video {
@@ -307,7 +316,9 @@
   }
   
   .specialties__categories {
-    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
   
   .specialties__gallery {
