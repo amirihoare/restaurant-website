@@ -1,8 +1,10 @@
 // reload scroll behavior
 window.addEventListener('load', function () {
-  const isReload =
-    performance.navigation.type === performance.navigation.TYPE_RELOAD ||
-    performance.getEntriesByType("navigation")[0]?.type === "reload"
+  const navigationEntries = performance.getEntriesByType('navigation')
+  const navigationType = navigationEntries.length > 0 ? navigationEntries[0].type : null
+
+  // check if this is a reload based on modern API
+  const isReload = navigationType === 'reload'
 
   const delay = isReload ? 100 : 0
 
